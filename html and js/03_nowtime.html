@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*p태그 이면서 id값이 one인 녀석*/
+        P#one
+        {
+            color: red;
+        }
+        p#two
+        {
+            color:beige;
+        }
+        .colorbaby
+        {
+            background-color: seagreen;
+        }
+    </style>
+</head>
+<body>
+    <p id="three"></p>
+    <script>
+        var now = new Date()
+        //<br> : 한 줄 띄기
+        document.write("현재시각 : "+now+"<br>")
+
+        //js 코드로 태그를 선택하고 스타일 등 지정하는 방법
+        document.getElementById('three').innerText="가나다라마바사"
+        document.getElementById('three').style.color = "springgreen"
+    </script>
+</body>
+</html>

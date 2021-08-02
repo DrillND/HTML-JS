@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!--prompt를 써도 좋고, input에 있는 걸 읽어와도 좋음.
+문제 2개
+2. 내가 태어난 계절을 입력하면 그 계절에 걸맞는 이미지가 튀어나오게 하기
+단, 12,1,2는 겨울 3,4,5는 봄, 6,7,8은 여름, 9,10,11은 가을-->
+
+    <img id="com" src="" alt="">
+    <script>
+        function animal()
+        {
+            
+            const mine = prompt("태어난 월 입력")
+            month(mine)
+
+            
+            
+
+            
+        }
+        animal()
+        function month(p)
+        {
+            switch(p)
+            {
+                case mine == '12':
+                let com = document.getElementById('com');
+                com.src = '0.png'
+                break;
+            }
+        }
+    </script>
+    
+</body>
+</html>

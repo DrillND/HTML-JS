@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!--prompt를 써도 좋고, input에 있는 걸 읽어와도 좋음.
+문제 2개
+1. 내가 태어난 연도를 입력하면 그 연도에 맞는 동물을 출력(12지신)-->
+
+
+<div>
+    <span>생년 월일 입력</span><br><br>
+    <input class="a" type="text">
+    <span>년</span>
+    <input class="b" type="text">
+    <span>월</span>
+    <input class="c" type="text">
+    <span>일</span><br><br>
+    <span class="result">당신의 띠는?</span>
+    
+    <div>
+        <br><input type="button" value="결과" onclick="ani('b')">
+    </div>
+
+
+</div>
+
+<script>
+            
+
+    function ani(b) 
+    {
+        let ani = document.getElementsByClassName("b")
+        switch(b)
+        {
+            case ani == '12':
+            result.innerText = "이김"
+            ["0","1","2","3","4","5","6","7","8","9","10","11"]
+        }
+
+    }
+
+</script>
+
+</body>
+</html>
