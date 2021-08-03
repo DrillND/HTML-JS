@@ -87,11 +87,25 @@ console.log(코좀그만골아라)
 
 
 //순서에 대한 논란
-//객체에 대해서도 순서에 대한 논란
-
 let arraybaby = []
 console.log(arraybaby)
 arraybaby[4] = 400
 console.log(arraybaby)
 arraybaby[9] = 900
 console.log(arraybaby)
+
+//객체에 대해서도 순서에 대한 논란
+var 객체 = {}
+console.log(객체)
+객체.게임하는사람 = "이재혁"
+console.log(객체)
+객체.반장 = "박정민"
+console.log(객체)
+객체.담임 = "이나겸"
+console.log(객체)
+객체.붕어 = "이동준"
+console.log(객체)
+객체.인원수 = 22
+console.log(객체)
+delete 객체.붕어
+console.log(객체)
