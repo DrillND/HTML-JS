@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div
+        {
+            border:1px solid black;
+        }
+    </style>
+</head>
+<body>
+   <div id ="aaa"></div>
+   <h1>dfsfsdfsf</h1>
+   <div id="bbb">
+       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, provident! Voluptatibus laudantium dolor, nostrum voluptate culpa cumque animi esse numquam consequatur alias sint omnis. Ipsum harum fuga non alias ipsa.</p>
+   </div>
+
+   <br><br><br>
+
+   <div>
+       <h1>
+            gfsdgfsdfsdgsd
+       </h1>
+       <div>
+           <h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ipsum officia placeat a cupiditate, repellendus dolore maiores fugiat, ad cumque sunt obcaecati rem nobis ratione porro impedit ducimus, minima dignissimos!
+           </h1>
+       </div>
+   </div>
+
+   <script>
+       //부모를 선택하는 두 가지 방법
+       //그냥 아이디 지정
+       var tag_aaa =document.getElementById('aaa')
+       tag_aaa.style.background = "springgreen"
+        //내가 지정한 태그의 부모를 선택하는 방법
+       var parent_of_bbb = document.getElementById('bbb').parentNode
+       parent_of_bbb.style.color = "red"
+   </script>
+
+</body>
+</html>
