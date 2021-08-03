@@ -118,3 +118,41 @@ console.log(객체)
 console.log(객체)
 객체.지각한사람 = "임정훈"
 console.log(객체)
+
+//생성자
+//js에서도 생성자
+
+//생성자 만드는 방법 특이
+//Student 객체 만들기
+function Student(name, age, hakbeon) //객체
+{
+    this.name = name
+    this.age = age
+    this.hakbeon = hakbeon
+    this.Sleep = function()
+    {
+        console.log("드르렁")
+    }
+}
+//
+//인스턴스 메소드(객체별로 다른 행동을 함)
+Student.prototype.DoStudy = function() //일종의 클래스 메소드
+{
+    alert("넌 학생이고 난 선생이야")
+}
+
+const dj = new Student('이동준', 33, '2009038033')
+const ng = new Student('이나겸', 53, '1990038033')
+
+console.log(dj)
+console.log(dj.name)
+console.log(dj.age)
+console.log(dj.hakbeon)
+dj.DoStudy()
+
+console.log(ng)
+console.log(ng.name)
+console.log(ng.age)
+console.log(ng.hakbeon)
+ng.DoStudy()
+ng.Sleep()
