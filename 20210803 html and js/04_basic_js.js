@@ -109,3 +109,12 @@ console.log(객체)
 console.log(객체)
 delete 객체.붕어
 console.log(객체)
+
+객체.name = "603호"
+객체.평균연령 = 20
+객체.종족 = "낫닝겐"
+객체.그만둔사람 = 2
+객체.그만둔사람명단 = ["이경민","강유나"]
+console.log(객체)
+객체.지각한사람 = "임정훈"
+console.log(객체)
