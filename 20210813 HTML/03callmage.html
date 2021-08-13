@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- 리액트 사용 준비 -->
+        <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+        <!-- 내가 입력한 강아지의 이름에 다라서 다른 강아지 사진이 나오게 -->
+        <!-- 후보 군은 3개이며, 그 외의 것이 안 나오게 -->
+
+        <title>Document</title>
+    </head>
+
+    <body id="root">
+        <script type="text/babel">
+            const container = document.getElementById('root') //id가 루트인 태그를 가지고 온댜
+        const name = prompt("lion? dog?")
+        const imgUrl = name+'.jpg'
+        
+
+        //jsx 라는 문법
+        //따옴표를 쓰면 안된다.
+
+                        let component = <div>
+        <h1>{name}는 귀엽습니다.</h1>
+        <img src={imgUrl}/>
+        </div>
+        const array = ['lion','dog']
+        //if(name != 'lion' && name != 'dog')
+        if(array.includes(name)==false)
+        {
+            component = <h1>그런거 없다</h1>
+        }
+    
+
+
+        ReactDOM.render(component,container)
+        </script>
+
+
+</body>
+
+</html>

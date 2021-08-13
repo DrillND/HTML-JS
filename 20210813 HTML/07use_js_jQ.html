@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <h1>dfjsdㅇㄹㄴㅇㄹㄴㅇㄹㄴㅇㄹㄴㅇㄴㄹㅇㄹlfkjsf</h1>
+        <h1>dfjsdㅇㄹㄴㅇㄹㄴㅇㄹㄴㅇㄹㄴㅇㄴㄹㅇㅇㄹㄴㅇㄹㄴㅇㅇㄶㄹㄹlfkjsf</h1>
+        <button id="btn1">자바스크립트 버튼</button>
+        <button id="btn2">제이쿼리 버튼</button>
+        <script>
+            //jQuery
+            $('h1').css('background','yellow')
+
+            //js
+            let myButton = document.getElementById('btn1')
+            myButton.onclick = function()
+            {
+                document.getElementsByTagName('h1')[1].style.color = 'red'
+            }
+
+            //jQuery로 이벤트 추가하기
+            let myButton2 = $('#btn2')//배열 연산자 안먹힘
+            myButton2.click(function() { $('h1:nth-child(2)').css('color','green') }) //h1:first
+
+            //두번째 태그에 글자색 바꾸기(jQuery)
+            $('h1:nth-child(2)').css('color','maroon')
+        </script>
+    </body>
+</html>

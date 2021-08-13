@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.addEventListener('DOMContentLoaded',()=> { //돔 도큐먼트에 다 실행하고 나서 화살표 수행해라
+            let ex = document.getElementById('ex')
+        ex.style.background = 'aqua'
+            //이벤트 추가
+            //ex.onclick = function(){
+            //    this.style.color='red'
+            //}
+            ex.addEventListener('click',function() {this.style.color='gold'})
+
+        })
+        
+
+        
+    </script>
+</head>
+<body>
+    <h1 id="ex">dfsfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfd</h1>
+</body>
+</html>

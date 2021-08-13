@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jQuery.js">//제이쿼리 사용 방법</script> 
+    <title>Document</title>
+    <script>
+        //셋 다 됨
+        //$(document).ready(
+        //$().ready(
+        $().ready(
+            function()
+            {
+                let ex = $('#ex')
+                ex.css('background', 'pink')
+
+                //이벤트 추가
+                ex.click(function()
+                {
+                    ex.css('background','gray')
+                }
+                )
+            }
+        )
+    </script>
+</head>
+<body>
+    <h1 id='ex'>csfdsdsfdfsfdsfsfsfsfsfsf</h1>
+</body>
+</html>

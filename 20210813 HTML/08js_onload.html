@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = function() //창이 켜지자 마자 수행하시오 라는 뜻, 스크립트가 헤드에 있을때 전체 실행하고 나서 이거
+        {
+        let ex = document.getElementById('ex')
+        ex.style.background = 'aqua'
+            //이벤트 추가
+            ex.onclick = function(){
+                this.style.color='red'
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1 id="ex">dfsfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfd</h1>
+</body>
+</html>
