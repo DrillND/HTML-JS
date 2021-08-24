@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*h1태그 중에 첫번재
+        어떤태그의 첫번째 자손태그
+        여기에서의 어떤 태그(=부모태그) :body
+        h1태그 중에 첫번재
+        */
+
+        h1:first-of-type {color: red;}
+        /* 첫번째 태그인데 그게 h1태그여야지만 함*/
+        h1:first-child{background-color: yellow;}
+    </style>
+</head>
+<body>
+   
+    <h1>aaaaaaaaa</h1>
+    <h1>aaaaaa</h1>
+    <h1>aaaa</h1>
+    <h1>aaaa</h1>
+    <p>아아아아아아아앙아아앙</p>
+</body>
+</html>

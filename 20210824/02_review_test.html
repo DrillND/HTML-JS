@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src = jQuery.js></script>
+
+    </script>
+    <style>
+        #first {background-color:  yellow;}
+        #second {background-color:  springgreen;}
+        #third {background-color: salmon;}
+    </style>
+</head>
+<body>
+    <!-- 3개의 h1 태그를 만드세요-->
+    <!-- 각 태그의 id값은 first second third라고 지정-->
+    <!-- h1태그인 것에 대해서 글자색은 (255,0,255)-->
+    
+    <!-- 기본으로 적힌 스타일 태그만을 이용해야 한다. -->
+    <!-- first 태그는 백그라운드를 yellow-->
+    <!-- second 태그는 백그라운드를 springgreen-->
+    <!-- third 태그는 백그라운드를 red-->
+
+    
+
+    <h1>aaaaaaaaaaa</h1>
+    <h1>bbbbbbbbbbbbbbb</h1>
+    <h1 id="first">11111111111111111111111</h1>
+    <h1 id="second">22222222222222222222222</h1>
+    <h1 id="third">33333333333333333333333</h1>
+
+    <script>
+       //javaScript 버전
+       //보통 id 정도는 태그에 직접 적어줌
+       //대신에 클래스는 태그를 통해서 추가한다.
+       document.getElementsByTagName('h1')[0].setAttribute('id','first')
+       document.getElementsByTagName('h1')[1].setAttribute('id','second')
+       //document.getElementsByTagName('h1')[2].setAttribute('id','third')
+       document.getElementsByTagName('h1')[0].style.color = '#FF00FF'
+       document.getElementsByTagName('h1')[1].style.color = 'rgb(255,0,255)'
+    </script>
+</body>
+</html>

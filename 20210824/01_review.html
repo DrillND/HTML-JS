@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <style>
+        .redtext {color: red;} /*클래스 이름이 redtext인 것의 스타일지정 */
+        .border{border : 1px solid crimson}
+    </style>
+</head>
+<body>
+    <h1 style="color: blue">dfsdfsdfsfsdfsdf</h1>
+    <h1 id = "first">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam officia ducimus eaque perferendis. Quam, totam! Veniam, sed accusantium numquam praesentium beatae repellat iusto provident, in doloribus molestiae facere fugit placeat.                    </h1>
+    <h1 id = "second" class="aaa">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam officia ducimus eaque perferendis. Quam, totam! Veniam, sed accusantium numquam praesentium beatae repellat iusto provident, in doloribus molestiae facere fugit placeat.                    </h1>
+    <h1 id = "nono">dkfkfkfkf</h1>
+    <script>
+        //자바스크립트 혹은 jQuery 이용해서 태그를 선택하고
+        //스타일을 지정하는 것
+        //id 는 중복이 안된다
+
+        let firstTag = document.getElementById('first')
+        firstTag.setAttribute('class','redtext border')
+        // <h1 id="first" class="redtext border">
+        //firstTag.style.background = 'yellow'
+
+        //jQuery : 자바스크립트 라이브러리
+        //자바스크립트를 쉽게 쓰고자 만들었다.
+        //리액트나 뷰 혹은 자바스크립트 자체 기능 업그레이드로 인하여 점점 안 쓰이고 있다. 지금까지 쓰는 대부분의 웹페이지는 jQ로 되어있다. 
+    
+
+        $('#second').addClass('redtext').addClass('border').css('background','springgreen')
+        //jQ 의 핵심 $표시 document를 표시한다
+        //$랑 선택자만 잘 알면 모든 태그를 다 선택 가능
+        //메소드 채이닝 가능... 뒤에다가 기능 추가가 계속 된다.
+    </script>
+</body>
+</html>
