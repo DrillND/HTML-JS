@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 선택자 삽입 및 스타일 지정시 '공백'에 대한 주의 필요함!!! */
+        div:first-child {
+            color: red; 
+        }
+
+        div :first-child { /* 첫번째 태그를 선택하는 것은 맞는 데 여기서 말하는 첫번째는 내가 선택한 그 태그의 첫번째 자손 */
+            background: springgreen;
+        }
+
+        div:first-child { /* 일단은 body에서 첫번째 자손태그 발견하고 그 다음에 기존 div태그 안에 있는 div를 선택한다. */
+            border: solid black 3px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>1111111</p>
+        <p>222222</p>
+        <p>333333</p>
+        <div>
+            <p>gfnghfjhj</p>
+            <p>gfnghfjhj</p>
+            <p>gfnghfjhj</p>
+        </div>
+    </div>
+
+    <div>
+        <div>
+            <h6>fgdgfdg</h6>
+            <h6>fgdgfdg</h6>
+        </div>
+    </div>
+    <p>dfsgsfgfdb</p>
+    <p>dfsgsfgfdb</p>
+    <p>dfsgsfgfdb</p>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+        }
+
+        .red {
+            background: red;
+            left: 10px;
+            top: 10px;
+
+        }
+
+        .green {
+            background: green;
+            left: 50px;
+            top: 50px;
+
+        }
+
+        .blue {
+            background: blue;
+            left: 90px;
+            top: 90px;
+
+        }
+
+        body>div /*body의 자손인 div*/
+        {
+            /* 핵심 1. 높이 주는 것 2. position 값을 static 이 외의 값으로 하는 것 3. overflow 값을 주는 것 */
+            border: 1px solid black;
+            height: 100px;
+            /* 높이주면 영역이 확보된다 */
+            position: relative;
+            /* 사각형의 위치가 바뀜 */
+            overflow: hidden;
+           /* 영역이 넘치면 짤라버림, 영역을 다 표시하고 싶으면 scroll 옵션 쓰면 됨  */
+           /* overflow:scroll */
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>sdfsdfsdfsdfsdfsdfsdfsd</h1>
+    <div>
+        <div class="box red"></div>
+        <div class="box green"></div>
+        <div class="box blue"></div>
+    </div>
+    <h1>fsdfsdfsdfsdfsdfsdfsd</h1>
+</body>
+
+</html>

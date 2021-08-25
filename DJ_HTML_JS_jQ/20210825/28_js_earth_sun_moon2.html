@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- #sun
+    {
+        <img src="sun.png" alt="">
+    }
+    #earth
+    {
+        <img src="earth.png" alt="">
+    }
+    #moon
+    {
+        <img src="moon.png" alt="">
+    } -->
+</head>
+<body>
+    <h1 id="sun">@</h1>
+    <h1 id="earth">O</h1>
+    <h1 id="moon">*</h1>
+
+    
+    <script>
+        let sun = document.querySelector('#sun')
+        let earth = document.querySelector('#earth')
+        let moon = document.querySelector('#moon')
+
+        sun.innerHTML = '<img src="sun.png">'
+        earth.innerHTML = '<img src="earth.png">'
+        moon.innerHTML = '<img src="moon.png">'
+
+        // 백그라운드
+        document.querySelector('body').style.backgroundImage = "url('밤하늘.jpg')"
+        document.querySelector('body').style.width = '700px'
+        document.querySelector('body').style.height = '700px'
+        document.querySelector('body').style.backgroundSize = "100% 100%"
+        document.querySelector('body').style.backgroundRepeat = 'no-repeat'
+
+        //원활한 위치변동 위한 position값 변경
+        sun.style.position = 'fixed'
+        earth.style.position = 'fixed'
+        moon.style.position = 'fixed'
+
+        //sun 이동
+        sun.style.left = 250+'px'
+        sun.style.top = 200+'px'
+
+        //지구의 각도와 달의 각도
+        let earthAngle = 0
+        let moonAngle = 0
+        
+        //0.03초에 한 번 뭔가를 할 것이다.
+        setInterval(
+            function() 
+            {
+                let earthLeft = 250+150 * Math.cos(earthAngle)
+                let earthTop = 200+150 * Math.sin(earthAngle)
+                
+                let moonLeft = earthLeft+50 * Math.cos(moonAngle)
+                let moonTop = earthTop+50 * Math.sin(moonAngle)
+
+                earth.style.left = earthLeft + 'px'
+                earth.style.top = earthTop + 'px'
+                
+                moon.style.left =  moonLeft + 'px'
+                moon.style.top =   moonTop + 'px'
+
+                earthAngle += 0.1;
+                moonAngle += 0.3;
+            }
+            , 1000/30  
+        )
+
+
+    </script>
+</body>
+</html>

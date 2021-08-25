@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #opa
+        {
+            background: cyan;
+            opacity: 0.3; /*투명도, 0부터 1까지 값을 가지고 자식태그까지 같이 투명하게 만듬*/
+        }
+        #alpha
+        {
+            background: rgba(39,140,140,0.5);
+            /*투명도 0부터 1사이의 값, 자식태그에게 영향을 주지는 않음*/
+        }
+    </style>
+</head>
+<body>
+    <div id="opa">
+        <p>sdkfjsljflsjflsjflsjfls</p>
+    </div>
+
+    <div id="alpha">
+        <p>skfjskjvlnslvnsvlnsvlnslvnslvslsnvlnln</p>
+    </div>
+</body>
+</html>

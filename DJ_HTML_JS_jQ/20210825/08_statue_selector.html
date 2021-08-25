@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /*태그의 상태에 따라서 다른 값을 주는 선택자*/
+        input:enabled
+        {
+            background: brown; /*input태그가 입력이 가능하면 브라운 */
+        }
+        input:disabled
+        {
+            background: coral; /*입력 안되는 상태면 코랄 */
+        }
+        input:focus
+        {
+            background: red; /*내가 클릭을 하게 되면 레드*/
+        }
+    </style>
+</head>
+<body>
+    <!-- h2+input+h2+input[disabled=disabled] -->
+    <h2></h2>
+    <input type="text">
+    <h2></h2>
+    <input type="text" disabled="disabled">
+    
+</body>
+</html>
